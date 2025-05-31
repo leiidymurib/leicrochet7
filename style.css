@@ -1,0 +1,224 @@
+/* Estilo general */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background-color: rgb(220, 193, 245);
+}
+
+/* Enlace de salto de accesibilidad */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.logo {
+  max-width: 80px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #d86ba6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navegación */
+.navegacion ul {
+  display: flex;
+  justify-content: center;
+  background-color: #d86ba6;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navegacion li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.navegacion a:hover {
+  background-color: #b65890;
+  transition: background-color 0.3s ease;
+}
+
+/* Títulos y textos */
+h1 {
+  font-size: 2.5em;
+  color: #8a2be2;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #b65890;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #222;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* Imágenes generales */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #eee;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+/* Galería */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.galeria-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #eee;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  gap: 10px;
+}
+input, textarea {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1em;
+}
+button {
+  background-color: #d86ba6;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #b65890;
+  transition: background-color 0.3s ease;
+}
+
+/* Redes sociales */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #f3d0f3;
+}
+.redes-sociales {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.redes-sociales li a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.redes-sociales li a i {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+footer a:hover {
+  color: #222;
+}
+
+.hero {
+  background-image: url('crochet/banner_crochet.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 0 0 30px 30px;
+}
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+.boton-cta {
+  background-color: #d86ba6;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.boton-cta:hover {
+  background-color: #b65890;
+}
+.beneficios {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+  background-color: #fbe6fc;
+  text-align: center;
+}
+.beneficios div {
+  max-width: 150px;
+}
+.beneficios i {
+  font-size: 2em;
+  color: #d86ba6;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 90%;
+  }
+}
